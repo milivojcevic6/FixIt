@@ -1,0 +1,39 @@
+.post-date{
+    background: #f4f4f4;
+    padding: 4px;
+    margin: 3px 0;
+    display: block;
+}
+.post-thumb{
+    width:100%;
+}
+
+.pagination-links{
+    margin:30px 0;
+}
+
+.pagination-links strong{
+    padding: 8px 13px;
+    margin:5px;
+    background: #f4f4f4;
+    border: 1px #ccc solid;
+}
+
+a.pagination-link{
+    padding: 8px 13px;
+    margin:5px;
+    background: #f4f4f4;
+    border: 1px #ccc solid;
+}
+
+.cat-delete{
+    display:inline;
+}
+
+.logo {
+    transition: transform .2s; /* Animation */
+}
+
+.logo:hover {
+    transform: scale(1.35); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
