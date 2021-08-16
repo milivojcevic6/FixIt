@@ -23,7 +23,7 @@ class Users extends CI_Controller{
             // Set message
             $this->session->set_flashdata('user_registered', 'You are now registered and can log in');
 
-            redirect('posts');
+            redirect('');
         }
     }
 
@@ -61,7 +61,7 @@ class Users extends CI_Controller{
                 // Set message
                 $this->session->set_flashdata('user_loggedin', 'You are now logged in');
 
-                redirect('posts');
+                redirect('');
             } else {
                 // Set message
                 $this->session->set_flashdata('login_failed', 'Login is invalid');

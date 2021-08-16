@@ -19,6 +19,7 @@
     <p><a class="btn btn-light" href="<?php echo site_url('posts/' . $post['slug']); ?>" target="_blank">Check it
             out</a></p>
     </div>
+</div>
     <?php endforeach; ?>
     <div class="pagination-links">
         <?php echo $this->pagination->create_links(); ?>

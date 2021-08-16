@@ -27,7 +27,6 @@
             <div class="col-12 col-sm-6 col-md-3">
                 <h6>Follow us</h6>
                 <ul class="list-unstyled">
-                    <li><a href="https://sr-rs.facebook.com/6milivojcevic">Facebook</a></li>
                     <li><a href="https://www.instagram.com/milivojcevic6/">Instagram</a></li>
                     <li><a href="https://www.linkedin.com/in/milivojcevic6">LinkedIn</a></li>
                     <li><a href="https://github.com/milivojcevic6">GitHub</a></li>

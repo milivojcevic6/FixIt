@@ -5,7 +5,7 @@ class Posts extends CI_Controller {
         // Pagination Config
         $config['base_url'] = base_url() . 'posts/index/';
         $config['total_rows'] = $this->db->count_all('posts');
-        $config['per_page'] = 3;
+        $config['per_page'] = 4;
         $config['uri_segment'] = 3;
         $config['attributes'] = array('class' => 'pagination-link');
 
@@ -37,7 +37,6 @@ class Posts extends CI_Controller {
     }
 
     public function create(){
-
         // Check login
         if(!$this->session->userdata('logged_in')){
             redirect('users/login');
@@ -47,12 +46,11 @@ class Posts extends CI_Controller {
 
         $data['categories'] = $this->post_model->get_categories();
 
-        $this->form_validation->set_rules('title','Title','required');
-        $this->form_validation->set_rules('body','Body','required');
+        $this->form_validation->set_rules('title', 'Title', 'required');
+        $this->form_validation->set_rules('body', 'Body', 'required');
         $this->form_validation->set_rules('category_id','Category','required');
 
         if($this->form_validation->run() === FALSE){
-
             $this->load->view('templates/header');
             $this->load->view('posts/create', $data);
             $this->load->view('templates/footer');
@@ -62,8 +60,8 @@ class Posts extends CI_Controller {
             $config['upload_path'] = './edit/images/PostImg';
             $config['allowed_types'] = 'gif|jpg|png';
             $config['max_size'] = '2048';
-            $config['max_width'] = '2000';
-            $config['max_height'] = '2000';
+            $config['max_width'] = '5000';
+            $config['max_height'] = '5000';
 
             $this->load->library('upload', $config);
 
@@ -76,6 +74,8 @@ class Posts extends CI_Controller {
             }
 
             $this->post_model->create_post($post_image);
+
+            // Set message
             $this->session->set_flashdata('post_created', 'Your post has been created');
 
             redirect('posts');

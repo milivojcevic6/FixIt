@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('posts/create'); ?>
+<?php echo form_open_multipart('posts/create'); ?>
 <div class="form-group">
     <label>Title</label>
     <input type="text" class="form-control" name="title" placeholder="Add Title">
@@ -22,6 +22,9 @@
 <div class="form-group">
     <label>Upload Image</label>
     <input type="file" name="userfile" size="20">
+</div>
+<div class="form-group">
+    <label>Upload Video </label>
 </div><br>
 <button type="submit" class="btn btn-light">Submit</button>
 </form>

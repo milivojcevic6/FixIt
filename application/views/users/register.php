@@ -1,7 +1,7 @@
 <?php echo validation_errors(); ?>
 
 <?php echo form_open('users/register'); ?>
-    <div class="row">
+    <div class="row text-center">
         <div class="col-md-4 col-md-offset-4">
             <h1 class="text-center"><?= $title; ?></h1>
             <div class="form-group">
@@ -27,8 +27,8 @@
             <div class="form-group">
                 <label>Confirm Password</label>
                 <input type="password" class="form-control" name="password2" placeholder="Confirm Password">
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </div><br>
+            <button type="submit" class="btn btn-primary btn-block col-12">Submit</button>
         </div>
     </div>
 <?php echo form_close(); ?>

@@ -20,14 +20,16 @@
         public function create_post($post_image){
             $slug = url_title($this->input->post('title'));
 
-            $data = array (
+            $data = array(
                 'title' => $this->input->post('title'),
                 'slug' => $slug,
                 'body' => $this->input->post('body'),
                 'category_id' => $this->input->post('category_id'),
                 'user_id' => $this->session->userdata('user_id'),
-                'post_image' => $post_image
+                'post_image' => $post_image,
+                'post_video' => "jbg"
             );
+
             return $this->db->insert('posts', $data);
         }
 
