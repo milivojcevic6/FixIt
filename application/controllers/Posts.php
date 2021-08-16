@@ -82,6 +82,10 @@ class Posts extends CI_Controller {
         }
     }
 
+    public function createVideo(){
+
+    }
+
     public function delete($id){
 
         // Check login

@@ -1,7 +1,15 @@
 <br><br>
 <h2><?php echo $post['title']; ?></h2>
 <small class="post-date">Posted on: <?php echo $post['created_at']; ?></small><br>
-<img src="<?php echo site_url(); ?>edit/images/PostImg/<?php echo $post['post_image']; ?>">
+
+<?php if("nema" == $post['post_video']): ?>
+    <div class="d-flex"><img class="col-6 mx-auto" src="<?php echo site_url(); ?>edit/images/PostImg/<?php echo $post['post_image']; ?>"></div>
+<?php endif;?>
+<?php if(!"nema" == $post['post_video']): ?>
+    <video src="<?php echo site_url(); ?>edit/videos/<?php echo $post['post_video']; ?>">
+        Your browser does not support the video tag.
+    </video>
+<?php endif;?>
 <div class="post-body">
     <?php echo $post['body']; ?>
 </div>
@@ -12,6 +20,15 @@
     <?php echo form_open('/posts/delete/'.$post['id']); ?>
     <input type="submit" value="Delete" class="btn btn-danger">
     </form>
+    <hr>
+    <?php if("nema" == $post['post_video']): ?>
+        <?php echo form_open_multipart('posts/createVideo'); ?>
+        <div class="form-group">
+            <label>Upload Video </label>
+            <input type="file" name="userfile" size="20">
+        </div><button type="submit" class="btn btn-light">Submit</button>
+        </form>
+    <?php endif; ?>
 <?php endif; ?>
 <hr>
 <h3>Comments</h3>
