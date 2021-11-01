@@ -28,6 +28,5 @@ The FixIt information system currently supports the following functionalities:
  *W3schools - I relied on their css in creating the homepage as an add-on Bootstrap.
  *SQL PhpMyAdmin – all the data is stored on FixIt database
  *XAMPP Apache Web Server – the environment with which I tried my system on the localhost domen.
- *WinSCP & PuTTY – were constantly open for me whenevery I had to check something
-on the server.
+ *WinSCP & PuTTY – were constantly open for me whenevery I had to check something on the server.
  *JetBrains – with PhpStorm I uploaded files on the online server while creating the code.
