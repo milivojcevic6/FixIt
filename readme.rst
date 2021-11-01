@@ -1,17 +1,18 @@
 Demo -> https://www.studenti.famnit.upr.si/~89191201/projekat/FixIt/
 
-FixIt is an information system whose main application gathers car lovers in one place.
+<h1>FixIt<h1>
+ is an information system whose main application gathers car lovers in one place.
 FixIt is implemented in the form of a kind of blog.
 The project was created for the needs of the subject systems3. 
 Since time was limited, project implementation was done using the CodeIgniter framework.
 
 The FixIt information system currently supports the following functionalities:
- *Register function (through which users can create an account),
- *Login functionality (to log in to the account),
- *Creating posts that can contain images (beside of images that posts can contain, is required to have title, body and to belong to a certain category),
- *Editing posts (For creator or administrator, it is possible to change later parts of the post such as title, body..),
- *Deleting posts (Any post can be deleted, but only by the creator or administrator),
- *Uploading videos to the post (The video can be uploaded to the post, on which page view it could then be played, and the image that was there until then, remains only as thumbnail. Only admin and the creator are able to do it),
+ * Register function (through which users can create an account),
+ * Login functionality (to log in to the account),
+ * Creating posts that can contain images (beside of images that posts can contain, is required to have title, body and to belong to a certain category),
+ * Editing posts (For creator or administrator, it is possible to change later parts of the post such as title, body..),
+ * Deleting posts (Any post can be deleted, but only by the creator or administrator),
+ * Uploading videos to the post (The video can be uploaded to the post, on which page view it could then be played, and the image that was there until then, remains only as thumbnail. Only admin and the creator are able to do it),
  *Creating categories (Admin has the ability to create categories / topics for posts.),
  *Deleting categories(Admin is the only one that can modify them),
  *Search by category (All users, even those visitors without an account, are able to search the site by category),
