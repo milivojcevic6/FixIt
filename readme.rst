@@ -1,6 +1,6 @@
-Demo -> https://www.studenti.famnit.upr.si/~89191201/projekat/FixIt/
+Demo -> https://www.studenti.famnit.upr.si/~89191201/projekat/FixIt/ :red_car: :blue_car:
 
-FixIt is an information system whose main idea is to gather car lovers in one place.
+**FixIt** is an information system whose main idea is to gather car lovers in one place.
 
 FixIt is implemented in the form of a kind of blog.
 
