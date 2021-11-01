@@ -1,6 +1,6 @@
 Demo -> https://www.studenti.famnit.upr.si/~89191201/projekat/FixIt/
 
-<h1>FixIt<h1>
+#FixIt#
  is an information system whose main application gathers car lovers in one place.
 FixIt is implemented in the form of a kind of blog.
 The project was created for the needs of the subject systems3. 
